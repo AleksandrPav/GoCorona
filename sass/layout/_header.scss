@@ -1,0 +1,132 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+
+
+.header__container {
+    @extend %display-flex__align-items-center;
+    min-height: 114px;
+}
+
+.header__logo {
+    position: relative;
+    z-index: 5;
+
+}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.header__button {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 252px;
+    justify-content: flex-end;
+    @extend %display-flex__align-items-center;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin: 0px 40px 0px 0px;
+
+}
+
+.menu__link {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2px;
+    color: #000000;
+    transition: color 0s ease 0s;
+    &:hover {
+        color: #EC5863;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .menu__item {
+        margin: 0px 30px 0px 0px;
+    }
+
+    .header__button {
+        flex: 0 0 170px;
+    }
+
+    .header__container {
+        min-height: 90px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .menu__body {
+        position: fixed;
+        top: 0;
+        overflow: auto;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #afbeeb;
+        padding: 80px 15px 30px 15px;
+        transition: left 0.2s ease 0s;
+    }
+
+    .header:target .menu__body {
+        left: 0;
+    }
+
+    .header:target .menu__body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        background-color: #afbeeb;
+    }
+
+    .menu__link {
+        color: #FCFDFE;
+        font-size: 20px;
+    }
+
+    .menu__item {
+        margin: 0px 0px 30px 0px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .menu__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 479.98px) {
+    .header__logo {
+        flex: 0 0 40px;
+        overflow: hidden;
+    }
+
+}

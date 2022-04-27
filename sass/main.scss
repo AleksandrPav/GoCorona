@@ -1,0 +1,23 @@
+@import './base/reset';
+@import './base/block_text';
+
+@import './utils/placeholders';
+
+@import './components/container';
+@import './components/wrapper';
+@import './components/animation';
+@import './components/media';
+
+
+
+@import './utils/button';
+@import './utils/burger_menu';
+
+
+
+@import './layout/header';
+@import './layout/get_started';
+@import './layout/stay_safe';
+@import './layout/experts';
+@import './layout/healthcare';
+@import './layout/footer';

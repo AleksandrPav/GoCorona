@@ -1,0 +1,24 @@
+/*---------------------PC--------------------*/
+@media (max-width: 1057px) {
+    [class*="__container"] {
+        max-width: 970px;
+
+    }
+}
+
+/*---------------------TABLET--------------------*/
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+/*---------------------MOBILE--------------------*/
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+}
+
+/*---------------------MOBILE-SMALL--------------------*/
+@media (max-width: 479.98px) {}

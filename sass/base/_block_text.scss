@@ -1,0 +1,48 @@
+
+.block-text_center {
+    text-align: center;
+}
+
+.block-text__text_mw {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.block-text__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: #000000;
+    &:not(:last-child) {
+        margin: 0px 0px 12px 0px;
+    }
+}
+
+
+.block-text__title span {
+    color: #EC5863;
+
+}
+
+.block-text__title-blue span {
+
+    color: #4285F4;
+
+}
+
+.block-text__text {
+    line-height: 138.5%;
+    color: #616161;
+    &:not(:last-child) {
+        margin: 0px 0px 24px 0px;
+    }
+}
+
+
+
+@media(max-width: 767.98px) {
+    .block-text__title {
+        font-size: 34px;
+    }
+
+}
